@@ -1,7 +1,7 @@
 # dotfiles
 
 # Installing Vim plugins
-`From https://medium.com/@huntie/10-essential-vim-plugins-for-2018-39957190b7a9`
+(From https://medium.com/@huntie/10-essential-vim-plugins-for-2018-39957190b7a9)
 
 There are several to manage plugins Vim, including Pathogen, Vundle, and Vim 8's native package loading. 
 
@@ -11,7 +11,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```    
 
-With vim-plug, I create a ~/.vim/plugins.vim file and add a Plug line for each dependency to install, between the required `plug#begin` and `plug#endcalls`.
+With vim-plug, I create a `~/.vim/plugins.vim` file and add a Plug line for each dependency to install, between the required `plug#begin` and `plug#endcalls`.
 ```
     call plug#begin('~/.vim/plugged')
     Plug 'airblade/vim-gitgutter'
