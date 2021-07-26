@@ -42,3 +42,10 @@ $ echo $PATH > path_dump.txt
 $ export PATH=$(cat path_dump.txt)
 ```
 
+# ssh-add your private key
+```
+$ eval "$(ssh-agent -s)"
+
+$ ssh-add /path/to/private/key
+```
+
