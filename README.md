@@ -33,3 +33,12 @@ Source this by adding the following statement to your .vimrc.
 Finally, launch Vim and run 
 ```:PlugInstall```
 
+## Quickly edit path variables
+```
+$ echo $PATH > path_dump.txt
+
+# Edit your path in your favorite editor
+
+$ export PATH=$(cat path_dump.txt)
+```
+
