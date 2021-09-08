@@ -38,7 +38,6 @@ Finally, launch Vim and run
 $ echo $PATH > path_dump.txt
 
 # Edit your path in your favorite editor
-```
 $ export PATH=$(cat path_dump.txt)
 ```
 
@@ -59,5 +58,4 @@ $ history | grep tag_generator.py
 # Pick the line number range from grep's result above
 
 $ fc -l 7650 7680
-
 ```
