@@ -38,7 +38,7 @@ Finally, launch Vim and run
 $ echo $PATH > path_dump.txt
 
 # Edit your path in your favorite editor
-
+```
 $ export PATH=$(cat path_dump.txt)
 ```
 
@@ -49,3 +49,15 @@ $ eval "$(ssh-agent -s)"
 $ ssh-add /path/to/private/key
 ```
 
+# Looking for commands in your bash history
+```
+$ history | grep tag_generator.py
+> 7649  vi tag_generator.py
+> 7658  python tag_generator.py
+
+# Find commands around the timeframe of a search pattern.
+# Pick the line number range from grep's result above
+
+$ fc -l 7650 7680
+
+```
