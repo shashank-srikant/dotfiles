@@ -1,6 +1,6 @@
 # dotfiles
 
-# Installing Vim plugins
+### Installing Vim plugins
 (From https://medium.com/@huntie/10-essential-vim-plugins-for-2018-39957190b7a9)
 
 There are several to manage plugins Vim, including Pathogen, Vundle, and Vim 8's native package loading. 
@@ -33,7 +33,7 @@ Source this by adding the following statement to your .vimrc.
 Finally, launch Vim and run 
 ```:PlugInstall```
 
-# Quickly edit path variables
+### Quickly edit path variables
 ```
 $ echo $PATH > path_dump.txt
 
@@ -41,14 +41,14 @@ $ echo $PATH > path_dump.txt
 $ export PATH=$(cat path_dump.txt)
 ```
 
-# ssh-add your private key
+### ssh-add your private key
 ```
 $ eval "$(ssh-agent -s)"
 
 $ ssh-add /path/to/private/key
 ```
 
-# Looking for commands in your bash history
+### Looking for commands in your bash history
 ```
 $ history | grep tag_generator.py
 > 7649  vi tag_generator.py
