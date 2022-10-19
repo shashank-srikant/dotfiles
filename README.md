@@ -33,6 +33,12 @@ Source this by adding the following statement to your .vimrc.
 Finally, launch Vim and run 
 ```:PlugInstall```
 
+### Source tmux after copying over `.tmux.conf` file
+
+```
+tmux source-file ~/.tmux.conf
+```
+
 ### Quickly edit path variables
 ```
 $ echo $PATH > path_dump.txt
