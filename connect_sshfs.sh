@@ -1,5 +1,11 @@
+# Install sshfs first
+
 pgrep -lf sshfs | xargs echo;
 kill $(pgrep -lf sshfs);
-sudo umount -f /home/local/mnt/folder/;
-sshfs -o reconnect,ServerAliveInterval=15,ServerAliveCountMax=3 -ononempty -o allow_other -oIdentityFile=/home/pth/to/private/key username@1.1.1.1:/home/ubuntu /home/local/mnt/folder/
 
+# Create empty folders folder1 and folder2 before mounting
+sudo umount -f /local/drive/folder1/;
+sudo umount -f /local/drive/folder2/;
+
+sshfs -o IdentityFile=~/.ssh/private-key.pem -o nonempty ubuntu@128.52.140.65:/home/ubuntu/ /local/drive/folder1/
+sshfs -o nonempty -o ssh_command='ssh -J username@jump.host.server.IP' username@assigned.instance.IP.address:/home/ /local/drive/folder2/
