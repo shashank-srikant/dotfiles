@@ -42,8 +42,10 @@ tmux source-file ~/.tmux.conf
 ### Quickly edit path variables
 ```
 $ echo $PATH > path_dump.txt
+```
 
 # Edit your path in your favorite editor
+```
 $ export PATH=$(cat path_dump.txt)
 ```
 
@@ -59,9 +61,16 @@ $ ssh-add /path/to/private/key
 $ history | grep tag_generator.py
 > 7649  vi tag_generator.py
 > 7658  python tag_generator.py
+```
 
 # Find commands around the timeframe of a search pattern.
 # Pick the line number range from grep's result above
-
+```
 $ fc -l 7650 7680
+```
+
+# Refresh AFS tokens
+```
+kinit username@CSAIL.MIT.EDU
+aklog
 ```
