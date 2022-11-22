@@ -42,10 +42,7 @@ tmux source-file ~/.tmux.conf
 ## Quickly edit path variables
 ```
 $ echo $PATH > path_dump.txt
-```
-
-## Edit your path in your favorite editor
-```
+$ vim path_dump.txt
 $ export PATH=$(cat path_dump.txt)
 ```
 
@@ -59,7 +56,6 @@ $ git config --global user.email johndoe@example.com
 ## ssh-add your private key
 ```
 $ eval "$(ssh-agent -s)"
-
 $ ssh-add /path/to/private/key
 ```
 
@@ -71,7 +67,7 @@ $ history | grep tag_generator.py
 ```
 
 ## Find commands around the timeframe of a search pattern.
-Run `history | grep` first, and from the line numbers seen there, run
+Run `history | grep` first as shown above, and from the line numbers seen there, run
 ```
 $ fc -l 7650 7680
 ```
