@@ -1,6 +1,6 @@
 # dotfiles
 
-### Installing Vim plugins
+## Installing Vim plugins
 (From https://medium.com/@huntie/10-essential-vim-plugins-for-2018-39957190b7a9)
 
 There are several to manage plugins Vim, including Pathogen, Vundle, and Vim 8's native package loading. 
@@ -33,49 +33,56 @@ Source this by adding the following statement to your .vimrc.
 Finally, launch Vim and run 
 ```:PlugInstall```
 
-### Source tmux after copying over `.tmux.conf` file
+## Source tmux after copying over `.tmux.conf` file
 
 ```
 tmux source-file ~/.tmux.conf
 ```
 
-### Quickly edit path variables
+## Quickly edit path variables
 ```
 $ echo $PATH > path_dump.txt
 ```
 
-# Edit your path in your favorite editor
+## Edit your path in your favorite editor
 ```
 $ export PATH=$(cat path_dump.txt)
 ```
 
-### ssh-add your private key
+## Git settings
+```
+$ git config --global core.editor "vim"
+$ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com
+```
+
+## ssh-add your private key
 ```
 $ eval "$(ssh-agent -s)"
 
 $ ssh-add /path/to/private/key
 ```
 
-### Looking for commands in your bash history
+## Looking for commands in your bash history
 ```
 $ history | grep tag_generator.py
 > 7649  vi tag_generator.py
 > 7658  python tag_generator.py
 ```
 
-# Find commands around the timeframe of a search pattern.
-# Pick the line number range from grep's result above
+## Find commands around the timeframe of a search pattern.
+Run `history | grep` first, and from the line numbers seen there, run
 ```
 $ fc -l 7650 7680
 ```
 
-# Refresh AFS tokens
+## Refresh AFS tokens
 ```
 kinit username@CSAIL.MIT.EDU
 aklog
 ```
 
-# `ncdu` util to find space consumption of folders
+## `ncdu` util to find space consumption of folders
 ```
 apt install ncdu
 ncdu /parent/folder/to/evaluate
