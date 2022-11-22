@@ -74,3 +74,9 @@ $ fc -l 7650 7680
 kinit username@CSAIL.MIT.EDU
 aklog
 ```
+
+# `ncdu` util to find space consumption of folders
+```
+apt install ncdu
+ncdu /parent/folder/to/evaluate
+```
