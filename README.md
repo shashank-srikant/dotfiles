@@ -58,6 +58,11 @@ $ git config --global user.email johndoe@example.com
 $ eval "$(ssh-agent -s)"
 $ ssh-add /path/to/private/key
 ```
+or, a simpler solution:
+```
+Host github.com
+  IdentityFile /path/to/private/key
+```
 
 ## Looking for commands in your bash history
 ```
