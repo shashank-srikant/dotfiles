@@ -88,3 +88,11 @@ aklog
 apt install ncdu
 ncdu /parent/folder/to/evaluate
 ```
+
+Space consumed by current dir
+```
+$ du -sh $(ls -A) | sort -hr
+
+15G anaconda
+512 .conda
+```
