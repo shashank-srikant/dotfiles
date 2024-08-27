@@ -96,3 +96,8 @@ $ du -sh $(ls -A) | sort -hr
 15G anaconda
 512 .conda
 ```
+
+## WSL -- open a WSL terminal by default when a new tab is opened
+
+When WSL is open, hit `ctrl+shift+,` to open `settings.json`.  
+Copy over the GUID of WSL Ubuntu over to the GUID in the defaultProfile.
