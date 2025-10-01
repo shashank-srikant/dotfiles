@@ -104,6 +104,6 @@ Copy over the GUID of WSL Ubuntu over to the GUID in the defaultProfile.
 
 ## GMail passkey to access emails from another account
 1. Go to Accounts -> Security
-2. Search for "App passwords" in the search bar. Generally not listed in the security options.
+2. Search for "App passwords" in the search bar. Do not hit enter -- just type the phrase and find the right option in the drop-down prompted by gmail. The option for 'app passwords' is sadly not listed in the Security tab.
 3. For App passwords to be applicable, you'll need to first enable 2-FA.
 4. Copy one-time app password and paste it in the host Gmail's settings -> Accounts and settings -> Send mail as -> Add another email ID.
