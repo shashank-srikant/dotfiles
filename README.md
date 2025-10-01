@@ -101,3 +101,9 @@ $ du -sh $(ls -A) | sort -hr
 
 When WSL is open, hit `ctrl+shift+,` to open `settings.json`.  
 Copy over the GUID of WSL Ubuntu over to the GUID in the defaultProfile.
+
+## GMail passkey to access emails from another account
+1. Go to Accounts -> Security
+2. Search for "App passwords" in the search bar. Generally not listed in the security options.
+3. For App passwords to be applicable, you'll need to first enable 2-FA.
+4. Copy one-time app password and paste it in the host Gmail's settings -> Accounts and settings -> Send mail as -> Add another email ID.
