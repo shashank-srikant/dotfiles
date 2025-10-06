@@ -102,6 +102,11 @@ $ du -sh $(ls -A) | sort -hr
 When WSL is open, hit `ctrl+shift+,` to open `settings.json`.  
 Copy over the GUID of WSL Ubuntu over to the GUID in the defaultProfile.
 
+## MS Windows + Office download
+https://github.com/massgravel/Microsoft-Activation-Scripts
+
+https://massgrave.dev/
+
 ## GMail passkey to access emails from another account
 1. Go to Accounts -> Security
 2. Search for "App passwords" in the search bar. Do not hit enter -- just type the phrase and find the right option in the drop-down prompted by gmail. The option for 'app passwords' is sadly not listed in the Security tab.
